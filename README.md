@@ -109,9 +109,50 @@ I was responsible for the full development lifecycle of the application, includi
 * Production-oriented development and maintenance
 * Modular and maintainable application structure
 
-## 📸 Screenshots
+## ## 📸 Screenshots
 
-Screenshots of the application will be added here to demonstrate the user interface and major features of the platform.
+### 🏠 Homepage
+
+The main landing page of the platform, designed to provide a clear and engaging introduction to the service.
+
+![Homepage](screenshots/01-homepage.png)
+
+### ✨ Features & Samples
+
+A dedicated section showcasing the platform's key features and available event samples.
+
+![Features and Samples](screenshots/02-features-and-samples.png)
+
+### 📋 Plans & Contact
+
+Users can explore available plans and access contact information directly through the platform.
+
+![Plans and Contact](screenshots/03-plans-and-contact.png)
+
+### ☀️ Light Mode
+
+The application supports both dark and light visual modes with a responsive and consistent design system.
+
+![Homepage Light Mode](screenshots/04-homepage-light-mode.png)
+
+### 🔐 Authentication
+
+The login interface provides secure access to user accounts and protected areas of the application.
+
+![Login Page](screenshots/05-login-page.png)
+
+### 🛡️ Admin Dashboard
+
+The administrative dashboard provides tools for managing users, requests, reservations, plans, samples, and system settings.
+
+![Admin Dashboard](screenshots/06-admin-dashboard.png)
+
+### 👤 User Dashboard
+
+The user dashboard provides access to account information, requests, reservations, and other user-specific features.
+
+![User Dashboard](screenshots/07-user-dashboard.png)
+
 
 ## 📍 Project Status
 
