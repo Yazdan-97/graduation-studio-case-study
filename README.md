@@ -75,29 +75,92 @@ The platform provides dedicated experiences for both users and administrators, a
 * npm
 * VS Code
 
-## 🏗️ Architecture
+## ## 🏗️ Application Architecture
 
-The application follows a modern full-stack architecture built around Next.js, with PostgreSQL as the primary database and Prisma as the ORM.
+The application is built using a modern full-stack architecture centered around Next.js.
 
-The system separates presentation, business logic, authentication, authorization, and data access responsibilities to improve maintainability, scalability, and security.
+```text
+┌──────────────────────────────┐
+│          Client UI           │
+│     React / Next.js          │
+│      TypeScript / CSS        │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│      Application Layer       │
+│   Server Logic / Actions     │
+│ Authentication / Validation  │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│        Data Access           │
+│        Prisma ORM            │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│         PostgreSQL           │
+│          Database            │
+└──────────────────────────────┘
+```
 
-## 👨‍💻 My Responsibilities
+The architecture was designed with a focus on maintainability, separation of responsibilities, security, and future scalability.
 
-I was responsible for the full development lifecycle of the application, including:
+## ⭐ Project Highlights
 
-* Frontend development
-* Backend development
-* Database design and implementation
-* Authentication and authorization
-* Role-based access control
-* User and admin dashboard development
-* Reservation and request workflows
-* Password management and recovery
-* Session management
-* Responsive UI implementation
-* Bug fixing and troubleshooting
-* Deployment and production improvements
-* Ongoing maintenance and feature development
+* End-to-end full-stack development
+* Production-oriented application architecture
+* Secure authentication and role-based authorization
+* User and administrative dashboards
+* Reservation and request management workflows
+* PostgreSQL database with Prisma ORM
+* Responsive and modern user interface
+* Dark and light theme support
+* Dynamic content and site settings
+* Password recovery and account management
+* Continuous maintenance and feature development
+
+## 👨‍💻 My Role & Technical Contributions
+
+I was responsible for the end-to-end development and continuous improvement of the platform.
+
+### Frontend Development
+
+* Designed and implemented responsive user interfaces using React, Next.js, TypeScript, and Tailwind CSS.
+* Developed reusable and maintainable UI components.
+* Implemented responsive layouts for desktop and mobile devices.
+* Built interactive sections including the hero slider, availability calendar, plans, samples, and dashboards.
+* Implemented dark and light visual themes.
+
+### Backend Development
+
+* Developed server-side application logic and APIs.
+* Implemented authentication and authorization workflows.
+* Designed protected routes and role-based access control.
+* Developed administrative workflows for managing users, requests, reservations, plans, samples, and system settings.
+
+### Database
+
+* Designed and maintained the PostgreSQL database structure.
+* Used Prisma ORM for database access and data management.
+* Designed relationships between users, plans, requests, reservations, and administrative entities.
+
+### Authentication & Security
+
+* Implemented user authentication and authorization.
+* Developed password management and password recovery workflows.
+* Implemented session and activity management.
+* Protected administrative functionality using role-based access control.
+
+### DevOps & Maintenance
+
+* Managed application deployment and production configuration.
+* Investigated and resolved development and production issues.
+* Improved application stability, performance, and maintainability.
+* Continuously implemented new features and improvements based on project requirements.
+
 
 ## 🚀 Project Highlights
 
@@ -109,7 +172,7 @@ I was responsible for the full development lifecycle of the application, includi
 * Production-oriented development and maintenance
 * Modular and maintainable application structure
 
-## ## 📸 Screenshots
+## 📸 Screenshots
 
 ### 🏠 Homepage
 
@@ -158,8 +221,8 @@ The user dashboard provides access to account information, requests, reservation
 
 The project is actively developed and continuously improved based on functional requirements, usability considerations, and production needs.
 
-## 🔒 Source Code
+## 🔒 Source Code & Privacy
 
 The source code of this project is private due to project ownership and confidentiality.
 
-This repository is provided as a public case study to showcase the project's features, architecture, technologies, and development experience.
+This public repository is provided as a case study to showcase the project's functionality, architecture, technology stack, and development experience.
