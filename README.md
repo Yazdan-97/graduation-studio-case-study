@@ -1,3 +1,4 @@
+
 # 🎓 Graduation Studio
 
 **A full-stack web platform for graduation event planning and management.**  
@@ -5,23 +6,28 @@
 
 [🌐 Live Platform](https://4zelei.com) · [📂 Public Case Study](https://github.com/Yazdan-97/graduation-studio-case-study)
 
+![Graduation Studio — product case study cover](screenshots/00-graduation-studio-cover.png)
+
+> **About this repository:** This is a public product and engineering case study. The production application's source code is private and is not included in this repository.
+
 ## Overview
 
 Graduation Studio is a production-deployed web application designed to simplify how graduation celebrations are explored, planned, and managed. It brings user-facing event planning workflows and administrative operations into a single platform.
 
-The project has evolved since its initial release, including a refreshed identity and ongoing refinements to its user experience and interface. This repository documents the product, technical approach, and development work. **It is a public case study, not an open-source release of the application code.**
+The project has evolved since its initial release, including a refreshed identity and ongoing refinements to its interface and user experience. This repository documents the product, technical approach, and development work.
 
 ## Key capabilities
 
 ### User experience
 
 - Explore event plans and package details.
-- Browse published event samples.
+- Browse event samples when available.
 - Check date availability using an interactive calendar.
 - Register and sign in to a user account.
 - Submit event requests and manage reservation-related activity.
 - Access account settings and profile management.
 - Use the platform across desktop and mobile screens.
+- Switch between light and dark themes.
 
 ### Administration
 
@@ -60,10 +66,10 @@ Next.js + React (TypeScript)
 Application Logic + Authentication + Authorization
          |
          v
-       Prisma ORM
+      Prisma ORM
          |
          v
-       PostgreSQL
+      PostgreSQL
 ```
 
 This diagram is a high-level conceptual overview, not an exhaustive infrastructure diagram.
@@ -81,21 +87,41 @@ I worked on the platform across the product lifecycle, including:
 
 ## Visual walkthrough
 
-The latest public-facing experience can be explored on the [live website](https://4zelei.com).
+The following screenshots and motion previews are captured from the public-facing Graduation Studio application. Explore the latest version on the [live website](https://4zelei.com).
 
-**Screenshot refresh:** This case study originally included screenshots of the earlier interface. New screenshots of the current Graduation Studio design should replace those assets before a visual gallery is republished here.
+### Homepage and interactive calendar
 
-Suggested gallery images to capture and add:
+| Homepage | Event availability calendar |
+| :---: | :---: |
+| ![Graduation Studio homepage](screenshots/01-homepage-desktop.png) | ![Event availability calendar](screenshots/02-availability-calendar.png) |
 
-1. `screenshots/01-homepage-desktop.png` — hero section and primary navigation
-2. `screenshots/02-availability-calendar.png` — event availability workflow
-3. `screenshots/03-event-plans.png` — packages and plan comparison
-4. `screenshots/04-authentication.png` — login/account experience
-5. `screenshots/05-mobile-experience.png` — mobile responsive layout
-6. `screenshots/06-user-dashboard.png` — user account dashboard (with demo data)
-7. `screenshots/07-admin-dashboard.png` — administration view (with demo data)
+### Discover plans and explore details
 
-> Privacy note: Use synthetic/demo data for all dashboard captures; avoid displaying real customer information, email addresses, or tokens.
+| Planning experience | Available event plans |
+| :---: | :---: |
+| ![Planning experience](screenshots/03-product-workflow.png) | ![Event plan selection](screenshots/04-event-plans.png) |
+
+| Event plan details | Visual gallery |
+| :---: | :---: |
+| ![Event plan details](screenshots/05-plan-details.png) | ![Graduation gallery preview](screenshots/06-visual-gallery.png) |
+
+### Account experience and dark mode
+
+| Sign-in interface | Dark theme |
+| :---: | :---: |
+| ![Graduation Studio sign-in screen](screenshots/07-account-login.png) | ![Graduation Studio dark theme](screenshots/08-dark-mode.png) |
+
+### 🎬 Interactions in motion
+
+**Interactive gallery:** Opening a photo preview and viewing the selected item.
+
+![Graduation Studio interactive gallery demonstration](screenshots/09-gallery-interaction.gif)
+
+**Theme switching:** Transitioning between the light and dark interfaces.
+
+![Graduation Studio light and dark mode interaction](screenshots/10-theme-switch.gif)
+
+> **Visual documentation:** These captures show public-facing screens. Administrative dashboards and private account data are intentionally excluded. Any future authenticated or administrative screenshots should use synthetic demo data and must not expose customer information, email addresses, credentials, or tokens.
 
 ## Current status
 
