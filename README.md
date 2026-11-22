@@ -1,228 +1,111 @@
-# 🎓 Graduation Planner
+# 🎓 Graduation Studio
 
-> A modern full-stack web platform for planning and managing graduation events.
+**A full-stack web platform for graduation event planning and management.**  
+*Previously known as Graduation Planner.*
 
-## 📌 Overview
+[🌐 Live Platform](https://4zelei.com) · [📂 Public Case Study](https://github.com/Yazdan-97/graduation-studio-case-study)
 
-Graduation Planner is a full-stack web application designed to simplify the planning and management of graduation events through a modern, responsive, and user-friendly platform.
+## Overview
 
-The platform provides dedicated experiences for both users and administrators, allowing users to explore available plans and samples, manage their requests and reservations, while administrators can manage users, content, plans, samples, and system settings through a dedicated dashboard.
+Graduation Studio is a production-deployed web application designed to simplify how graduation celebrations are explored, planned, and managed. It brings user-facing event planning workflows and administrative operations into a single platform.
 
-## ✨ Key Features
+The project has evolved since its initial release, including a refreshed identity and ongoing refinements to its user experience and interface. This repository documents the product, technical approach, and development work. **It is a public case study, not an open-source release of the application code.**
 
-### 👤 User Features
+## Key capabilities
 
-* User registration and authentication
-* Secure login and session management
-* User profile management
-* Password change and password reset
-* Browse available event plans
-* Browse event samples
-* Check availability and reserved dates
-* Submit and manage requests
-* Reservation management
-* Responsive user interface
+### User experience
 
-### 🛡️ Administration
+- Explore event plans and package details.
+- Browse published event samples.
+- Check date availability using an interactive calendar.
+- Register and sign in to a user account.
+- Submit event requests and manage reservation-related activity.
+- Access account settings and profile management.
+- Use the platform across desktop and mobile screens.
 
-* Dedicated admin dashboard
-* User management
-* Admin account management
-* Role-based access control
-* Plan management
-* Sample management
-* Reservation and request management
-* Request status tracking
-* Website and system settings
-* Dynamic content management
+### Administration
 
-### 🔐 Authentication & Security
+- Manage users and administrative access.
+- Create and update event plans, samples, and site content.
+- Review and manage incoming requests and reservations.
+- Monitor request status and reservation availability.
+- Configure website content and system settings.
 
-* Secure authentication
-* Role-based authorization
-* Session management
-* Password reset workflow
-* Protected administrative routes
-* Server-side authorization
-* Secure password handling
+### Application foundations
 
-## 🛠️ Technology Stack
+- Authentication and session management.
+- Role-based access control and protected administrative routes.
+- Server-side application logic and authorization.
+- Relational data modeling and database access.
+- Responsive interface and maintainable application components.
 
-### Frontend
+## Technology stack
 
-* Next.js
-* React.js
-* TypeScript
-* Tailwind CSS
-* Responsive Web Design
+| Layer | Technologies |
+| --- | --- |
+| Frontend | Next.js, React, TypeScript, Tailwind CSS |
+| Backend | Next.js / Node.js, server-side application logic |
+| Database | PostgreSQL, Prisma ORM |
+| Development | Git, GitHub, npm |
 
-### Backend
-
-* Next.js
-* Node.js
-* Server-side application logic
-* Authentication and authorization
-
-### Database
-
-* PostgreSQL
-* Prisma ORM
-
-### Development Tools
-
-* Git
-* GitHub
-* npm
-* VS Code
-
-## ## 🏗️ Application Architecture
-
-The application is built using a modern full-stack architecture centered around Next.js.
+## High-level architecture
 
 ```text
-┌──────────────────────────────┐
-│          Client UI           │
-│     React / Next.js          │
-│      TypeScript / CSS        │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│      Application Layer       │
-│   Server Logic / Actions     │
-│ Authentication / Validation  │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│        Data Access           │
-│        Prisma ORM            │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│         PostgreSQL           │
-│          Database            │
-└──────────────────────────────┘
+Browser / Responsive UI
+         |
+         v
+Next.js + React (TypeScript)
+         |
+         v
+Application Logic + Authentication + Authorization
+         |
+         v
+       Prisma ORM
+         |
+         v
+       PostgreSQL
 ```
 
-The architecture was designed with a focus on maintainability, separation of responsibilities, security, and future scalability.
+This diagram is a high-level conceptual overview, not an exhaustive infrastructure diagram.
 
-## ⭐ Project Highlights
+## My contributions
 
-* End-to-end full-stack development
-* Production-oriented application architecture
-* Secure authentication and role-based authorization
-* User and administrative dashboards
-* Reservation and request management workflows
-* PostgreSQL database with Prisma ORM
-* Responsive and modern user interface
-* Dark and light theme support
-* Dynamic content and site settings
-* Password recovery and account management
-* Continuous maintenance and feature development
+I worked on the platform across the product lifecycle, including:
 
-## 👨‍💻 My Role & Technical Contributions
+- Responsive UI implementation and iterative visual improvements.
+- Reusable frontend components and interactive event-planning workflows.
+- Server-side application logic and administrative functionality.
+- Authentication, role-based authorization, and protected user journeys.
+- Database design and integration with Prisma and PostgreSQL.
+- Deployment, production maintenance, and ongoing refinements.
 
-I was responsible for the end-to-end development and continuous improvement of the platform.
+## Visual walkthrough
 
-### Frontend Development
+The latest public-facing experience can be explored on the [live website](https://4zelei.com).
 
-* Designed and implemented responsive user interfaces using React, Next.js, TypeScript, and Tailwind CSS.
-* Developed reusable and maintainable UI components.
-* Implemented responsive layouts for desktop and mobile devices.
-* Built interactive sections including the hero slider, availability calendar, plans, samples, and dashboards.
-* Implemented dark and light visual themes.
+**Screenshot refresh:** This case study originally included screenshots of the earlier interface. New screenshots of the current Graduation Studio design should replace those assets before a visual gallery is republished here.
 
-### Backend Development
+Suggested gallery images to capture and add:
 
-* Developed server-side application logic and APIs.
-* Implemented authentication and authorization workflows.
-* Designed protected routes and role-based access control.
-* Developed administrative workflows for managing users, requests, reservations, plans, samples, and system settings.
+1. `screenshots/01-homepage-desktop.png` — hero section and primary navigation
+2. `screenshots/02-availability-calendar.png` — event availability workflow
+3. `screenshots/03-event-plans.png` — packages and plan comparison
+4. `screenshots/04-authentication.png` — login/account experience
+5. `screenshots/05-mobile-experience.png` — mobile responsive layout
+6. `screenshots/06-user-dashboard.png` — user account dashboard (with demo data)
+7. `screenshots/07-admin-dashboard.png` — administration view (with demo data)
 
-### Database
+> Privacy note: Use synthetic/demo data for all dashboard captures; avoid displaying real customer information, email addresses, or tokens.
 
-* Designed and maintained the PostgreSQL database structure.
-* Used Prisma ORM for database access and data management.
-* Designed relationships between users, plans, requests, reservations, and administrative entities.
+## Current status
 
-### Authentication & Security
+**Live and evolving.** Graduation Studio continues to be refined as product and operational needs change.
 
-* Implemented user authentication and authorization.
-* Developed password management and password recovery workflows.
-* Implemented session and activity management.
-* Protected administrative functionality using role-based access control.
+## Source code and confidentiality
 
-### DevOps & Maintenance
+The production application's source code is **private** due to project ownership and confidentiality considerations. This public repository is a portfolio case study containing project information and visual documentation; it does **not** contain the complete application source code.
 
-* Managed application deployment and production configuration.
-* Investigated and resolved development and production issues.
-* Improved application stability, performance, and maintainability.
-* Continuously implemented new features and improvements based on project requirements.
+---
 
-
-## 🚀 Project Highlights
-
-* Full-stack application developed with a modern web stack
-* Responsive interface for desktop and mobile devices
-* Complete user and administration workflows
-* Secure authentication and authorization architecture
-* Relational database design using PostgreSQL and Prisma
-* Production-oriented development and maintenance
-* Modular and maintainable application structure
-
-## 📸 Screenshots
-
-### 🏠 Homepage
-
-The main landing page of the platform, designed to provide a clear and engaging introduction to the service.
-
-![Homepage](screenshots/01-homepage.png)
-
-### ✨ Features & Samples
-
-A dedicated section showcasing the platform's key features and available event samples.
-
-![Features and Samples](screenshots/02-features-and-samples.png)
-
-### 📋 Plans & Contact
-
-Users can explore available plans and access contact information directly through the platform.
-
-![Plans and Contact](screenshots/03-plans-and-contact.png)
-
-### ☀️ Light Mode
-
-The application supports both dark and light visual modes with a responsive and consistent design system.
-
-![Homepage Light Mode](screenshots/04-homepage-light-mode.png)
-
-### 🔐 Authentication
-
-The login interface provides secure access to user accounts and protected areas of the application.
-
-![Login Page](screenshots/05-login-page.png)
-
-### 🛡️ Admin Dashboard
-
-The administrative dashboard provides tools for managing users, requests, reservations, plans, samples, and system settings.
-
-![Admin Dashboard](screenshots/06-admin-dashboard.png)
-
-### 👤 User Dashboard
-
-The user dashboard provides access to account information, requests, reservations, and other user-specific features.
-
-![User Dashboard](screenshots/07-user-dashboard.png)
-
-
-## 📍 Project Status
-
-The project is actively developed and continuously improved based on functional requirements, usability considerations, and production needs.
-
-## 🔒 Source Code & Privacy
-
-The source code of this project is private due to project ownership and confidentiality.
-
-This public repository is provided as a case study to showcase the project's functionality, architecture, technology stack, and development experience.
+**Live:** https://4zelei.com  
+**Project identity:** Graduation Studio (formerly Graduation Planner)
